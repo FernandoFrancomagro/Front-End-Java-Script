@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Nueva Academia de Platón</title>
+</head>
+<body>
+  <!--   Encabezado principal -->
+     <header>
+        <h1>Bienvenido a la página de la Nueva Academia de Platón</h1><!--  Titulo del sitio -->
+      <!--   icono del carrito , con enlace a la pagina del carrito -->
+         <a href="carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+          <nav> <!-- Navegación principal -->
+      <ul>
+        <li><a href="#inicio">Inicio</a></li> <!-- Enlace a la sección de inicio -->
+        <li><a href="#productos">Productos</a></li> <!-- Enlace a la sección de productos -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+      </ul>
+    </nav>
+     </header>
+
+<!--      Barra de navegacion principal -->
+      
+
+       <main><section id="inicio">
+      <h2>No olvides que existe el mundo de las Ideas</h2> <!-- Título de la sección -->
+      <img src="./Imagenes/imagen0.jpg" alt="Imagen bienvenida"> <!-- Imagen del cielo -->
+      <p>Elige uno de los libros de iniciación. Esta es tu entrada al conocimiento de la filosofía platonica.</p> <!-- Texto introductorio -->
+    </section></main>
+
+    <!--   seccion de productos -->
+       <section id="productos" class="productos">
+       <!--  producto con descripcion , precio y boton para agregar al carrito -->
+         <article class="producto">
+            <h2>"La República"</h2>
+            <p>Libro "La República" de Platón</p>
+           <img src="./Imagenes/imagen1.jpg" alt="Producto 1">
+            <p class="precio">$1000/p>
+            <button onclick="agregarAlcarrito('Producto 1', 100)" >Agregar</button>
+         </article>
+
+                <!--  producto con descripcion , precio y bton para agregar al carrito -->
+                <article class="producto">
+                    <h2>"Apología de Sócrates"</h2>
+                    <p>Libro "Apología de Sócrates"</p>
+                    <img src="./Imagenes/imagen2.jpg" alt="Producto 2">
+                    <p class="precio">$800</p>
+                    <button onclick="agregarAlcarrito('Producto 2', 200)" >Agregar</button>
+                 </article>
+
+       </section>
+
+        <section id="contacto">
+      <h2>Contacto</h2> <!-- Título de la sección -->
+      <form action="#" method="POST"> <!-- Formulario de contacto -->
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el nombre -->
+        <input type="text" id="nombre" name="nombre" required> <!-- Campo de texto obligatorio -->
+
+        <label for="correo">Correo electrónico:</label> <!-- Etiqueta para correo -->
+        <input type="email" id="correo" name="correo" required> <!-- Campo de email obligatorio -->
+
+        <label for="mensaje">Mensaje:</label> <!-- Etiqueta para el mensaje -->
+        <textarea id="mensaje" name="mensaje" required></textarea> <!-- Área de texto obligatorio -->
+
+        <button type="submit">Enviar</button> <!-- Botón de envío -->
+      </form>
+    </section>
+
+ <script src="./index.js"></script>
+    
+ <footer>
+    <p>&copy; 2025 Mi Sitio Web</p> <!-- Derechos de autor -->
+  </footer>
+</body>
+</html>
